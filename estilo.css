@@ -1,0 +1,109 @@
+body {
+    background: #2f4f4fd7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:larger;
+}
+
+header {
+    color: black;
+    text-align: center;
+}
+
+section {
+    background: #f7ac6adc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none ;
+    width: 100px;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    appearance: none;
+    border-radius: 10px;
+    background: #000000;
+    cursor: ew-resize;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 10px;
+    background: #04aa6d;
+    cursor: ew-resize;
+}
+
+.rangevalue {
+    width: 90px;
+    background: #2f4f4fa9;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgb(240, 235, 235);
+    border: 1px solid #bbb;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rangevalue::placeholder {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.identidade {
+    width: 130px;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    background-color: #2f4f4fa9;
+    color: #ffffff;
+    color-scheme: #ffffff;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.identidade::placeholder {
+    color: #ffffff;
+    opacity: 0.9;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.button {
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    background-color: #2f4f4fa9;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    vertical-align: middle;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+

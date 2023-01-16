@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de IMC</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1>Calcule seu IMC!</h1>
+    </header>
+    <section>
+        <div>
+            <p>Nome: 
+                <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu Nome"
+                class="identidade">
+            </p>
+            <p>
+                Peso (Kg): 
+                <input type="range" name="peso" id="peso" min="10" max="200" value="10" oninput="rangepeso.value=value" class="slider">
+                <input type="number"id="rangepeso" placeholder="10 - 200" oninput="peso.value=value" class="rangevalue" min="10" max="200">
+            </p>
+            <p>
+                Altura (m): 
+                <input type="range" name="alt" id="altu" min="1.30" max="2.20" step="0.01" oninput="rangealt.value=value" value="1.30" class="slider">
+                <input type="number" id="rangealt" placeholder="1.30 - 2.20" oninput="altu.value=value" class="rangevalue" min="1.30" max="2.20" step="0.01">
+            </p>
+
+            <input 
+            type="button" 
+            value="Calcular" 
+            onclick="calcular()" 
+            class="button">
+
+            <hr color="black">
+        </div>
+
+        <div id="res">
+            <p>Calculando o seu IMC...</p>
+        </div>
+
+        <div id="aviso"></div>
+        
+        <br>
+        <a id="output" href="https://conectesus-paciente.saude.gov.br/login"></a>
+    
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
