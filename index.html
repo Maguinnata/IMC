@@ -15,38 +15,33 @@
     <section>
         <div>
             <p>Nome: 
-                <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu Nome"
-                class="identidade">
+                <input type="text" name="name" id="name" placeholder="Digite seu Nome" class="identity">
             </p>
             <p>
                 Peso (Kg): 
-                <input type="range" name="peso" id="peso" min="10" max="200" value="10" oninput="rangepeso.value=value" class="slider">
-                <input type="number"id="rangepeso" placeholder="10 - 200" oninput="peso.value=value" class="rangevalue" min="10" max="200">
+                <input type="range" name="weight" id="weight" min="10" max="200" value="10" oninput="rangew.value=value" class="slider">
+                <input type="number" id="rangew" placeholder="10 - 200" oninput="weight.value=value" class="rangevalue" min="10" max="200">
             </p>
             <p>
                 Altura (m): 
-                <input type="range" name="alt" id="altu" min="1.30" max="2.20" step="0.01" oninput="rangealt.value=value" value="1.30" class="slider">
-                <input type="number" id="rangealt" placeholder="1.30 - 2.20" oninput="altu.value=value" class="rangevalue" min="1.30" max="2.20" step="0.01">
+                <input type="range" name="height" id="heightt" min="1.30" max="2.20" step="0.01" oninput="rangeh.value=value" value="1.30" class="slider">
+                <input type="number" id="rangeh" placeholder="1.30 - 2.20" oninput="heightt.value=value" class="rangevalue" min="1.30" max="2.20" step="0.01">
             </p>
 
             <input 
             type="button" 
             value="Calcular" 
-            onclick="calcular()" 
+            onclick="compute()" 
             class="button">
 
             <hr color="black">
         </div>
 
-        <div id="res">
+        <div id="answ">
             <p>Calculando o seu IMC...</p>
         </div>
 
-        <div id="aviso"></div>
+        <div id="warn"></div>
         
         <br>
         <a id="output" href="https://conectesus-paciente.saude.gov.br/login"></a>

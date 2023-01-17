@@ -69,7 +69,7 @@ section {
     opacity: 0.6;
 }
 
-.identidade {
+.identity {
     width: 130px;
     padding: 3px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ section {
     text-align: center;
 }
 
-.identidade::placeholder {
+.identity::placeholder {
     color: #ffffff;
     opacity: 0.9;
     font-size: 15px;
